@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mappa Interattiva — Lite</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="hidden" aria-hidden="true">
+    <button class="close" aria-label="Chiudi">×</button>
+    <button class="nav prev" aria-label="Precedente">‹</button>
+    <img id="lightbox-img" alt="immagine non trovata"/>
+    <button class="nav next" aria-label="Successiva">›</button>
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <script src="./data.js"></script>
+  <script src="./viewer.js"></script>
+</body>
+</html>
